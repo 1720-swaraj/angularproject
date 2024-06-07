@@ -1,0 +1,20 @@
+<!-- <h1>User profile</h1>
+<h3>changing initial value as you type like - {{ initialValue }}</h3>
+<input type="text" [value]="initialValue" (input)="onChange($event)" />
+
+<div>
+  @for(user of users;track user.name){ @if(user.salary > 2000){
+  <h4>
+    Name - {{ user.name }} is Single -
+    {{ user.isSingle ? "yes" : "coder" }} salary - {{ user.salary }}
+  </h4>
+  } }
+</div> -->
+
+<h3>name is {{name}} single {{isSingle?"yes":"No"}} and salary is{{salary}} and title is {{title}}</h3>
+<h3>{{phoneNo | countryPipe:"USA"}}</h3>
+<button (click)="sendData()">send data</button>
+<button (click)="sendData2()">toggle data</button>
+<button (click)="updatedData()">update data</button>
+<h1>{{isActive}}</h1>
+<!-- <h3>name is {{name}} parent status is {{isSingle?"No":"Yes"}} and salary is {{salary}}</h3> -->
